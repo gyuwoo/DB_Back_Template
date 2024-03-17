@@ -5,7 +5,7 @@ export default class UserService {
 
     async SignUp() {
         return {
-            data: 'SignUp'
+            data: '"/user/signup get 요청 들어 옴"'
         };
     }
 }
