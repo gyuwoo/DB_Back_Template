@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 
+/*
+  express 설정 및 http설정을 위한 파일
+   * express-generator 사용 시 자동으로 설정되는 파일이다
+   * 예제를 진행하는데 해당 파일에 대한 이해는 필요하지 않으므로 분석하고 싶은 사람만 읽어보면 된다
+*/
+
 /**
  * Module dependencies.
  */

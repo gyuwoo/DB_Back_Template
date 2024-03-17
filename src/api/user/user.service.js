@@ -1,9 +1,13 @@
+/* 예제 회원가입 및 로그인 service 파일 */
 import { Service, Inject } from 'typedi';
 import models from '../../models';
 
 export default class UserService {
     constructor() { }
 
+    /**
+     * 회원가입
+     */
     async SignUp() {
         try {
             const testUser = await models.user.findOne({
@@ -27,6 +31,9 @@ export default class UserService {
         }
     }
 
+    /**
+     * 로그인
+     */
     async SignIn() {
         return await models.user.findOne({
             where: {

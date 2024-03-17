@@ -1,3 +1,4 @@
+/* 예제 회원가입 및 로그인 controller 파일 */
 import UserService from "./user.service";
 import { Container } from 'typedi';
 
@@ -24,7 +25,7 @@ export default [
     },
 
     /**
-     * 회원가입
+     * 로그인
      */
     {
         path: '/user/signin',
