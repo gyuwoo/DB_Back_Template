@@ -1,4 +1,4 @@
-import UserService from "./user.service";
+import TestService from "./test.service";
 import { Container } from 'typedi';
 
 export default [
@@ -6,13 +6,13 @@ export default [
      * 회원가입
      */
     {
-        path: '/user/signup',
+        path: '/test',
         method: 'get',
         middleware: [],
         controller: async (req, res, next) => {
             try {
-                const UserServiceInstance = Container.get(UserService);
-                const data = await UserServiceInstance.SignUp();
+                const TestServiceInstance = Container.get(TestService);
+                const data = await TestServiceInstance.Test();
 
                 return res.status(200).json(data);
             } catch (err) {

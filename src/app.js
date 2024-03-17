@@ -1,3 +1,5 @@
+import '../env/env';
+import dotenv from 'dotenv';
 import createError from 'http-errors';
 import express from 'express';
 import path from 'path';
@@ -7,7 +9,25 @@ import cors from 'cors';
 
 import { routes } from './api';
 
+import models from './models';
+
+dotenv.config();
+
 const app = express();
+
+// force: true일 경우 서버가 재시작 될 때마다 DB가 초기화 되므로
+// 초기 실행 후 주석처리
+// if (process.env.DB_SYNC || process.env.DB_SYNC === 'false') {
+//   console.log('Sequelize Initialize');
+//   models.sequelize
+//     .sync({ force: true })
+//     .then(() => {
+//       console.log('Sequelize Success');
+//     })
+//     .catch(err => {
+//       console.log('Sequelize Error : ', err);
+//     })
+// }
 
 app.disable('x-powered-by');
 
