@@ -64,7 +64,6 @@ export default [
                 // 에러가 났을 경우를 대비하여 try-catch문을 이용하여 확실하게 에러 처리를 한다.
                 return res.status(500).json({
                     message: err,
-                    ...data,
                 })
             }
         }
@@ -112,7 +111,6 @@ export default [
             } catch (err) {
                 return res.status(500).json({
                     message: err,
-                    ...data
                 })
             }
         }
