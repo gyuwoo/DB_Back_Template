@@ -2,7 +2,7 @@ React와 Node.js + MySQL로 만드는 웹사이트 예제(백엔드)
 =
 ### <span style='color:red'>**!! 해당 템플릿을 이용하여 프로젝트 제작 시 보안을 위해 아래 명령어를 반드시 실행시켜주세요 !! <br/>(해당 명령어를 실행하지 않을 시 보안에 매우 취약해질 수 있습니다)**</span>
 ```
-git rm --cached .env.development
+git rm --cached env/.env.development 
 ```
 #### <span style='color:red'><u>**위 명령어를 실행하셨다면 반드시 .gitignore 파일의 주석을 해제 해주세요!**</u></span>
 <details>
