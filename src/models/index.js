@@ -9,7 +9,6 @@ const config = require('../../env/database.config');
 
 const db = {};
 
-/* sequelize 설정 */
 let sequelize;
 if (config.use_env_variable) {
     sequelize = new Sequelize(process.env[config.use_env_variable], config);
@@ -24,10 +23,7 @@ if (config.use_env_variable) {
     })
 }
 
-/*
-    models폴더에 정의된 파일 불러오기
-        * 파일은 반드시 ***.model.js 형태로 만들어야 합니다
-*/
+
 fs.readdirSync(__dirname)
     .filter(file => {
         return (

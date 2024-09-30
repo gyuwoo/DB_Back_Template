@@ -1,8 +1,3 @@
-/*
-    npx sequelize db:create 명령어를 실행하기 위한 파일
-     * 해당 파일은 .sequelizerc 파일과 관련있습니다
-*/
-
 const path = require('path');
 const dotenv = require('dotenv');
 
